@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: teal;
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+}
+
+.circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.container-value {
+  position: relative;
+  color: teal;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.percentbar {
+  height: 20px;
+  /* width: 100%; */
+  background-color: teal;
+  display: none;
+  border-radius: 100px;
+}
+.active {
+  display: block;
+}
+.popup {
+  padding: 50px;
+  font-weight: bolder;
+  height: 80vh;
+  width: 50vw;
+  background-color: gold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.pop-active {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup h1 {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button .btn {
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+  font-weight: bolder;
+  font-size: 13px;
+}
